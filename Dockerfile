@@ -1,4 +1,3 @@
 FROM nginx:alpine
-COPY . /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+COPY smarthub.html /usr/share/nginx/html/index.html
+COPY images /usr/share/nginx/html/images
